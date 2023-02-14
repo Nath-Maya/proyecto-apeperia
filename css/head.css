@@ -17,15 +17,15 @@
     position: absolute;
 }
 
-.head__logo {
+.head-logo {
     margin-bottom: 1rem;
 }
 
-.head__navegacion {
+.head-navegacion {
     text-align: center;
 }
 
-.head__enlace {
+.head-enlace {
     font-size: 1.1rem;
 
     display: inline-block;
