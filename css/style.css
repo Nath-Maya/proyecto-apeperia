@@ -189,6 +189,9 @@ body {
    max-width: 350px;
    box-sizing: border-box;
    padding: 2rem 0 2rem 5rem;
+
+   background-repeat: no-repeat;
+   background-position: top 1.25rem left 2.5rem;
 }
 
 .item__titulo {
@@ -201,6 +204,18 @@ body {
 
 .item__texto {
    line-height: normal;
+}
+
+.item-reloj {
+   background-image: url(../img/icono-reloj.png);
+}
+
+.item-dinero {
+   background-image: url(../img/icono-dinero.png);
+}
+
+.item-quimica {
+   background-image: url(../img/icono-quimica.png);
 }
 
 /* !SOBRE NOSOTROS */
