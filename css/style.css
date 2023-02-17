@@ -52,6 +52,12 @@ body {
    padding: 0.7rem;
 }
 
+.boton:hover {
+   box-shadow: 2px 5px 10px var(--fuente-ceniza-claro);
+   scale: 1.05;
+   font-weight: bold;
+}
+
 /* !ENCABEZADO */
 
 .head {
@@ -389,7 +395,10 @@ body {
    color: var(--boton-rojo);
    border-color: var(--boton-rojo);
    margin-top: 1.25rem;
+}
 
+.contacto-texto {
+   padding: 0.5rem;
 }
 
 /* !INSTITUCIONAL */
@@ -406,7 +415,7 @@ body {
    padding-bottom: 2rem;
 }
 
-.institucional__titulo {
+.institucional-titulo {
    color: var(--fuente-ceniza-oscuro);
    font-weight: 700;
    font-size: 1.5rem;
@@ -417,34 +426,34 @@ body {
    margin-bottom: 2rem;
 }
 
-.institucional__descripcion {
+.institucional-descripcion {
    margin-bottom: 2rem;
 }
 
-.institucional__direccion {
+.institucional-direccion {
    font-size: 1.5rem;
    line-height: normal;
 
    margin-bottom: 2rem;
 }
 
-.institucional__contacto {
+.institucional-contacto {
    font-size: 1.2rem;
    line-height: 1.8;
 
    margin-top: 2rem;
 }
 
-.institucional__contacto-telefono {
+.institucional-contacto-telefono {
    line-height: normal;
 }
 
-.institucional__contacto-email {
+.institucional-contacto-email {
    color: var(--fuente-ceniza-oscuro);
    text-decoration: underline;
    display: block;
 }
 
-.institucional__video {
+.institucional-video {
    width: 100vw;
 }
