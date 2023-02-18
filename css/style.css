@@ -457,3 +457,42 @@ body {
 .institucional-video {
    width: 100vw;
 }
+
+/* !FOOTER */
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   background-color: var(--background-footer);
+
+   padding-top: 2.5rem;
+   padding-bottom: 2rem;
+}
+
+.footer-social {
+   display: flex;
+}
+
+.footer-midia {
+   display: block;
+
+   width: 42px;
+   height: 42px;
+
+   margin: 2rem 1rem;
+}
+
+.footer-navegacion {
+   color: var(--background-blanco);
+   text-align: center;
+   line-height: 3;
+}
+
+
+.footer-enlace {
+   display: inline-block;
+
+   margin: 0 .5rem .7rem;
+}
