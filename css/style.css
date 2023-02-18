@@ -593,4 +593,24 @@ body {
    }
 
 }
+@media screen and (min-width:768px) {
+   .llamada-texto {
+      max-width: 600px;
+   }
+
+   .tarjetas {
+      max-width: 400px;
+   }
+
+   .institucional-contacto-email {
+      display: inline-block;
+   }
+
+   .institucional-video {
+      width: 100%;
+   }
+}
+   
+
+
 
