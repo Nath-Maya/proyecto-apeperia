@@ -43,19 +43,23 @@ body {
 
 .boton {
    text-align: center;
+
    display: block;
    width: 100%;
    max-width: 350px;
+   padding: 0.7rem;
+
    box-sizing: border-box;
    border: 1px solid var(--boton-rojo);
    border-radius: 5px;
-   padding: 0.7rem;
+
 }
 
 .boton:hover {
    box-shadow: 2px 5px 10px var(--fuente-ceniza-claro);
    scale: 1.05;
    font-weight: bold;
+   transition: 250ms;
 }
 
 /* !ENCABEZADO */
@@ -117,6 +121,7 @@ body {
    font-family: var(--montserrat);
    font-size: 2rem;
    font-weight: 700;
+
    text-transform: uppercase;
 
    margin-bottom: 1.5rem;
@@ -143,11 +148,14 @@ body {
 
 .destacados-titulo {
    color: var(--fuente-ceniza-oscuro);
+
    font-weight: 700;
    font-size: 1.5rem;
    font-family: var(--montserrat);
+
    text-transform: uppercase;
    text-align: center;
+
    margin-bottom: 2rem;
 }
 
@@ -256,6 +264,10 @@ body {
 .sobre-nosotros {
    color: var(--fuente-ceniza-oscuro);
    font-weight: 700;
+}
+
+.sobre_nosotros__imagen {
+   display: none;
 }
 
 /* !PLANES */
@@ -498,7 +510,7 @@ body {
 }
 
 
-/* ?RESPONSIVE DESKTOP */
+/* ?RESPONSIVE DESKTOP 1024px */
 
 
 @media screen and (min-width: 1024px) {
@@ -514,7 +526,7 @@ body {
    }
 /* LLAMADA */
    .llamada {
-      background-image: url(../img/bg-intro.jpg);
+      background-image: url(/img/bg-intro.jpg);
       background-size: cover;
 
       padding-top: 8.25rem;
@@ -588,11 +600,18 @@ body {
       padding-bottom: 1.5rem;
    }
 
-   .sobre-nosotros__imagen {
+   .sobre_nosotros__imagen {
       display: block;
    }
 
+   .destacados-panel-imagen {
+      border-radius: 10px;
+   }
+
 }
+
+/* ?RESPONSIVE TABLET */
+
 @media screen and (min-width:768px) {
    .llamada-texto {
       max-width: 600px;
@@ -609,6 +628,16 @@ body {
    .institucional-video {
       width: 100%;
    }
+
+   .destacados-panel-imagen {
+      border-radius: 10px;
+   }
+
+   .diferenciales {
+      background-color: var(--background-ceniza-claro);
+      justify-content: space-around;
+   }
+
 }
    
 
