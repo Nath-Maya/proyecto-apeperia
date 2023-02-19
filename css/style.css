@@ -101,6 +101,24 @@ body {
    margin-left: 0.7rem;
 }
 
+.head-enlace a {
+   padding: 0.5rem;
+
+   transition: 200ms;
+}
+
+.head-enlace a:hover {
+   background: rgba(239, 221, 221, 0.29);
+   border-radius: 5px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(3.4px);
+   -webkit-backdrop-filter: blur(3.4px);
+   border: 1px solid rgba(239, 221, 221, 0.22);
+
+   font-weight: bold;
+}
+
+
 /* !CUERPO PRINCIPAL */
 
 .llamada {
@@ -241,12 +259,16 @@ body {
 
 .sobre_nosotros__titulo {
    color: var(--fuente-ceniza-oscuro);
+
    font-weight: 700;
    font-size: 1.5rem;
    font-family: var(--montserrat);
+
    text-transform: uppercase;
    text-align: center;
+
    margin-bottom: 1.25rem;
+   padding-top: 1rem;
 }
 
 .sobre_nosotros__texto {
@@ -509,9 +531,22 @@ body {
    margin: 0 .5rem .7rem;
 }
 
+.footer-enlace a:hover {
+   background: rgba(239, 221, 221, 0.29);
+   border-radius: 5px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(3.4px);
+   -webkit-backdrop-filter: blur(3.4px);
+   border: 1px solid rgba(239, 221, 221, 0.22);
+
+   font-weight: bold;
+}
+
+.footer-enlace a {
+   padding: 0.5rem;
+}
 
 /* ?RESPONSIVE DESKTOP 1024px */
-
 
 @media screen and (min-width: 1024px) {
    .container {
@@ -524,6 +559,7 @@ body {
       justify-content: space-between;
       border: none;
    }
+
 /* LLAMADA */
    .llamada {
       background-image: url(/img/bg-intro.jpg);
@@ -536,6 +572,7 @@ body {
       font-size: 3.25rem;
       margin-bottom: 2rem;
    }
+
 /* DIFERENCIALES */
    .diferenciales {
       background-color: var(--cinza-claro);
@@ -544,6 +581,7 @@ body {
    .diferenciales-lista {
       justify-content: space-around;
    }
+   
 /* INSTITUCIONAL */
    .institucional-descripcion {
       width: 100%;
@@ -560,6 +598,25 @@ body {
    .institucionaL-contacto-email {
       display: block;
    }
+
+   .institucional__contenido {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+   }
+
+   .institucional-video {
+      align-self: flex-end;
+      width: 375px;
+   }
+
+   .institucional__informaciones {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
 /* PLANES */
    .planes__tarjetas {
       flex-direction: row;
@@ -570,17 +627,13 @@ body {
    .tarjetas {
       max-width: 300px;
    }
-/* FOOTER */
-   .footer {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
+
+   .planes__tarjetas li:nth-child(2) {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
    }
 
-   .footer-navegacion {
-      text-align: left;
-      min-width: 600px;
-   }
+
 /* SOBRE NOSOTROS */
    .sobre_nosotros {
       display: flex;
@@ -591,7 +644,7 @@ body {
    }
 
    .sobre_nosotros__titulo {
-      text-align: left;
+      text-align: center;
    }
 
    .sobre-nosotros__texto--division {
@@ -608,11 +661,24 @@ body {
       border-radius: 10px;
    }
 
+   /* FOOTER */
+   .footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   .footer-navegacion {
+      text-align: left;
+      min-width: 600px;
+   }
 }
 
-/* ?RESPONSIVE TABLET */
+/* ?RESPONSIVE TABLET 768px */
 
 @media screen and (min-width:768px) {
+
+   /* CUERPO PRINCIPAL */
    .llamada-texto {
       max-width: 600px;
    }
@@ -621,6 +687,8 @@ body {
       max-width: 400px;
    }
 
+   /* INSTITUCIONAL */
+
    .institucional-contacto-email {
       display: inline-block;
    }
@@ -628,6 +696,10 @@ body {
    .institucional-video {
       width: 100%;
    }
+
+   
+
+   /* DESTACADOS */
 
    .destacados-panel-imagen {
       border-radius: 10px;
